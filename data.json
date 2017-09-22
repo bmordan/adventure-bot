@@ -8,12 +8,12 @@
             "keywords": [],
             "filter": null,
             "gambits": [
-                "FLwrus4a"
+                "LktOJwkk"
             ]
         }
     },
     "gambits": {
-        "FLwrus4a": {
+        "LktOJwkk": {
             "trigger": {
                 "flags": {},
                 "filter": "^hasTag('hello')",
@@ -22,10 +22,10 @@
                 "clean": "\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
             },
             "replies": [
-                "xIIqNPdv",
-                "ghPEHnOz",
-                "hH7RBImT",
-                "0CtUgDlD"
+                "s4mL6pBq",
+                "Jf1pPhul",
+                "HJcXqbFI",
+                "m92aRG91"
             ],
             "conditional": null,
             "conversation": null,
@@ -33,22 +33,22 @@
         }
     },
     "replies": {
-        "xIIqNPdv": {
+        "s4mL6pBq": {
             "string": "Hi! I'm the TABLEFLIP adventure bot.",
             "filter": null,
             "keep": false
         },
-        "ghPEHnOz": {
+        "Jf1pPhul": {
             "string": "Hello, I'm the TABLEFLIP adventure bot.",
             "filter": null,
             "keep": false
         },
-        "hH7RBImT": {
+        "HJcXqbFI": {
             "string": "Howdy, I'm the TABLEFLIP adventure bot.",
             "filter": null,
             "keep": false
         },
-        "0CtUgDlD": {
+        "m92aRG91": {
             "string": "Ola, I'm the TABLEFLIP adventure bot.",
             "filter": null,
             "keep": false
