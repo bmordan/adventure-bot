@@ -1,0 +1,61 @@
+{
+    "topics": {
+        "random": {
+            "name": "random",
+            "flags": {
+                "keep": "keep"
+            },
+            "keywords": [],
+            "filter": null,
+            "gambits": [
+                "FLwrus4a"
+            ]
+        }
+    },
+    "gambits": {
+        "FLwrus4a": {
+            "trigger": {
+                "flags": {},
+                "filter": "^hasTag('hello')",
+                "question": false,
+                "raw": "*~2",
+                "clean": "\\s*((?:[^\\s]+\\s+){0,1}(?:[^\\s]+)?)\\s*"
+            },
+            "replies": [
+                "xIIqNPdv",
+                "ghPEHnOz",
+                "hH7RBImT",
+                "0CtUgDlD"
+            ],
+            "conditional": null,
+            "conversation": null,
+            "topic": "random"
+        }
+    },
+    "replies": {
+        "xIIqNPdv": {
+            "string": "Hi! I'm the TABLEFLIP adventure bot.",
+            "filter": null,
+            "keep": false
+        },
+        "ghPEHnOz": {
+            "string": "Hello, I'm the TABLEFLIP adventure bot.",
+            "filter": null,
+            "keep": false
+        },
+        "hH7RBImT": {
+            "string": "Howdy, I'm the TABLEFLIP adventure bot.",
+            "filter": null,
+            "keep": false
+        },
+        "0CtUgDlD": {
+            "string": "Ola, I'm the TABLEFLIP adventure bot.",
+            "filter": null,
+            "keep": false
+        }
+    },
+    "checksums": {
+        "./chat/main.ss": "9e12c7e2345e9c575de1a2fe41f5ef9fa52282e3"
+    },
+    "version": 1
+}
