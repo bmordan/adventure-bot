@@ -1,10 +1,9 @@
 import superscript from 'superscript'
 import express from 'express'
 import bodyParser from 'body-parser'
-import config from 'config'
 
 const server = express()
-const { PORT } = config
+const PORT = process.env.PORT || 5000
 
 server.use(bodyParser.json())
 
@@ -14,7 +13,6 @@ server.get('/superscript', (req, res) => {
   if (req.query.message) {
     return bot.reply('user1', req.query.message, (err, reply) => {
       if (err) return console.error(err)
-      console.log({reply})
       res.json({
         message: reply.string
       })
@@ -29,7 +27,7 @@ const options = {
   },
   importFile: './data.json',
   logPath: null,
-  mongoURI: process.env.MONGODB_URI || 'mongodb://localhost:3000/adventure-bot'
+  mongoURI: process.env.MONGOLAB_ORANGE_URI || 'mongodb://localhost:3000/adventure-bot'
 }
 
 superscript.setup(options, (err, botInstance) => {
