@@ -1,6 +1,6 @@
 {
-  "name": "hal9000",
-  "version": "0.0.1",
+  "name": "tableflip-adventure-bot",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "body-parser": "1.x",
@@ -14,10 +14,10 @@
     "babel-preset-es2015": "^6.16.0"
   },
   "scripts": {
+    "deploy": "npm run build && git push heroku master",
     "build": "npm-run-all build:*",
     "build:bot": "parse -f",
     "build:server": "babel src --presets babel-preset-es2015 --out-dir lib",
-    "start": "npm run build && npm run start:server",
-    "start:server": "node lib/server-express.js"
+    "start": "node lib/server-express.js"
   }
 }
