@@ -4,7 +4,7 @@ import bodyParser from 'body-parser'
 import config from 'config'
 
 const server = express()
-const { PORT, MONGODB_URI } = config
+const { PORT } = config
 
 server.use(bodyParser.json())
 
@@ -29,7 +29,7 @@ const options = {
   },
   importFile: './data.json',
   logPath: null,
-  mongoURI: MONGODB_URI
+  mongoURI: process.env.MONGODB_URI || 'mongodb://localhost:3000/adventure-bot'
 }
 
 superscript.setup(options, (err, botInstance) => {

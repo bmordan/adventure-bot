@@ -14,7 +14,7 @@
     "babel-preset-es2015": "^6.16.0"
   },
   "scripts": {
-    "deploy": "npm run build && git push heroku master",
+    "deploy": "NODE_ENV=production npm run build && git push heroku master",
     "build": "npm-run-all build:*",
     "build:bot": "parse -f",
     "build:server": "babel src --presets babel-preset-es2015 --out-dir lib",
