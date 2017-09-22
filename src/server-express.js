@@ -1,6 +1,11 @@
 import superscript from 'superscript'
 import express from 'express'
 import bodyParser from 'body-parser'
+import dotenv from 'dotenv'
+
+dotenv.config({
+  path: process.env.NPM_CONFIG_PRODUCTION ? '../.env' : '../.env.dev'
+})
 
 const server = express()
 const PORT = process.env.PORT || 5000
@@ -27,7 +32,7 @@ const options = {
   },
   importFile: './data.json',
   logPath: null,
-  mongoURI: process.env.MONGOLAB_ORANGE_URI || 'mongodb://localhost:3000/adventure-bot'
+  mongoURI: process.env.MONGODB_URI
 }
 
 superscript.setup(options, (err, botInstance) => {
