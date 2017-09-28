@@ -3,13 +3,12 @@
   "description": "SuperScript chat bot easily deployed to Heroku",
   "keywords": [
     "bot",
-    "express",
     "superscript",
     "chatbot",
     "node"
   ],
-  "repository": "https://github.com/bmann/superscript-heroku",
-  "success_url": "/superscript?message=hi",
+  "repository": "https://github.com/bmordan/tableflip-adventure-bot",
+  "success_url": "/adventure-bot?message=hi",
   "addons": [
     "mongolab"
   ]
